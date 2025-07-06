@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+streamlit
+streamlit-mic-recorder
+pygame
+edge-tts
+faster-whisper
+requests
+python-multipart
+pygame
