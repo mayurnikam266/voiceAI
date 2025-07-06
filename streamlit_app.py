@@ -10,10 +10,10 @@ st.title("🎙️ Real-Time Voice AI Assistant")
 
 st.markdown("""
 **🔐 Enter OpenRouter API Key**  
-<small>👉 <a href="" target="_blank" style="color: #1E90FF;">Click here to get your API key</a></small>
+<small>👉 <a href="https://openrouter.ai/openrouter/cypher-alpha:free/api" target="_blank" style="color: #1E90FF;">Click here to get your API key</a></small>
 """, unsafe_allow_html=True)
 
-api_key = st.text_input("", type="password")
+api_key = st.text_input("API Key", type="password", label_visibility="collapsed")
 
 role = st.selectbox("Select Assistant Behavior", ["friendly", "english_tutor", "custom"])
 custom_role = st.text_input("Custom Role (if selected above)")
