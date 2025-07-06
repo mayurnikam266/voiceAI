@@ -8,7 +8,13 @@ from streamlit_mic_recorder import mic_recorder
 
 st.title("🎙️ Real-Time Voice AI Assistant")
 
-api_key = st.text_input("Enter OpenRouter API Key", type="password")
+st.markdown("""
+**🔐 Enter OpenRouter API Key**  
+<small>👉 <a href="" target="_blank" style="color: #1E90FF;">Click here to get your API key</a></small>
+""", unsafe_allow_html=True)
+
+api_key = st.text_input("", type="password")
+
 role = st.selectbox("Select Assistant Behavior", ["friendly", "english_tutor", "custom"])
 custom_role = st.text_input("Custom Role (if selected above)")
 
